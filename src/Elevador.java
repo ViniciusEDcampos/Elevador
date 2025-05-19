@@ -29,6 +29,7 @@ public class Elevador {
     }
 
     public int getAndar_atual() {
+
         return andar_atual;
     }
 

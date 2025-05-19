@@ -44,6 +44,11 @@ public class Main {
         // pegando o valor de quantas pessoas estão ocupando o elevador
         System.out.println("Quantidade de pessoas no elevador: " + elevadorBanco.getPessoas_presentes());
 
+        //saida de 8 pessoas do elevador
+        elevadorBanco.sair_elevador(8);
+
+        // pegando o valor de quantas pessoas estão ocupando o elevador
+        System.out.println("Quantidade de pessoas no elevador: " + elevadorBanco.getPessoas_presentes());
 
         //tentativa de subir mais andares do que o possivel(tentativa de erro)
         elevadorBanco.subir_andar_elevador();

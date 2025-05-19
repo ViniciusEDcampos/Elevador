@@ -1,8 +1,8 @@
 public class Elevador {
 
-    private int andar_maximo;
+    final int andar_maximo;
     private int andar_atual;
-    private int capacidade;
+    final int capacidade;
     private int pessoas_presentes;
 
     public Elevador(int andar_atual, int capacidade, int pessoas_presentes, int andar_maximo) {
@@ -16,34 +16,12 @@ public class Elevador {
         return pessoas_presentes;
     }
 
-    public void setPessoas_presentes(int pessoas_presentes) {
-        this.pessoas_presentes = pessoas_presentes;
-    }
-
-    public int getAndar_maximo() {
-        return andar_maximo;
-    }
-
-    public void setAndar_maximo(int andar_maximo) {
-        this.andar_maximo = andar_maximo;
-    }
 
     public int getAndar_atual() {
 
         return andar_atual;
     }
 
-    public void setAndar_atual(int andar_atual) {
-        this.andar_atual = andar_atual;
-    }
-
-    public int getCapacidade() {
-        return capacidade;
-    }
-
-    public void setCapacidade(int capacidade) {
-        this.capacidade = capacidade;
-    }
 
     //metodo entrar pessoa no elevador (+1 pessoa, mas se estiver cheio)
 

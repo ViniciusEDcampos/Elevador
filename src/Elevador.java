@@ -46,13 +46,22 @@ public class Elevador {
 
     //metodo entrar pessoa no elevador (+1 pessoa, mas se estiver cheio)
 
-    public int entrar_elevador(int pessoa){
-        return pessoas_presentes + pessoa;
+    public void entrar_elevador(int pessoa) {
+        if (pessoas_presentes + pessoa <= capacidade) {
+            pessoas_presentes += pessoa;
+        } else {
+            System.out.println("Capacidade excedida! Só cabem mais " + (capacidade - pessoas_presentes) + " pessoas.");
+        }
     }
-    //metodo sair do elevador(-1 pessoa, só se tiver alguem no elevador
 
-    public int sair_elevador(int pessoa){
-        return pessoas_presentes - pessoa;
+    //metodo sair pessoa no elevador (-1 pessoa, menos se estiver vazio )
+
+    public void sair_elevador(int pessoa) {
+        if (pessoas_presentes - pessoa >= 0) {
+            pessoas_presentes -= pessoa;
+        } else {
+            System.out.println("Erro: não há tantas pessoas no elevador para sair.");
+        }
     }
 
     //metodo decer (-1 andar, se estiver no terreo não desce mais)

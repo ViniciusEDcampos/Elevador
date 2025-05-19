@@ -9,16 +9,16 @@ public class Main {
         elevadorBanco.entrar_elevador(3);
         elevadorBanco.entrar_elevador(3);
         System.out.println("Andar atual" + elevadorBanco.getAndar_atual());
-        System.out.println("Quantidade de pessoas no elevador" + elevadorBanco.getPessoas_presentes());
+        System.out.println("Quantidade de pessoas no elevador " + elevadorBanco.getPessoas_presentes());
         elevadorBanco.descer_andar_elevador();
-        System.out.println("Andar atual" + elevadorBanco.getAndar_atual());
+        System.out.println("Andar atual " + elevadorBanco.getAndar_atual());
         elevadorBanco.subir_andar_elevador();
-        System.out.println("Andar atual" + elevadorBanco.getAndar_atual());
+        System.out.println("Andar atual " + elevadorBanco.getAndar_atual());
         elevadorBanco.subir_andar_elevador();
-        System.out.println("Andar atual" + elevadorBanco.getAndar_atual());
+        System.out.println("Andar atual " + elevadorBanco.getAndar_atual());
         elevadorBanco.subir_andar_elevador();
-        System.out.println("Andar atual" + elevadorBanco.getAndar_atual());
-        System.out.println("Quantidade de pessoas no elevador" + elevadorBanco.getPessoas_presentes());
+        System.out.println("Andar atual " + elevadorBanco.getAndar_atual());
+        System.out.println("Quantidade de pessoas no elevador " + elevadorBanco.getPessoas_presentes());
         elevadorBanco.sair_elevador(2);
 
     }
